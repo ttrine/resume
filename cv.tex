@@ -13,6 +13,9 @@
 
 \titleformat{\subsection}[runin]{\bfseries}{}{}{}
 
+% Hide page number
+\pagenumbering{gobble}
+
 \begin{document}
 
 % Name, contact info
@@ -23,27 +26,34 @@
 {~\faGithub~} \href{https://github.com/ttrine}{ttrine} \sep
 {~\small\faLinkedin~} \href{https://www.linkedin.com/in/tyler-trine/}{tyler-trine}
 
-\section{Summary} In a sentence or two, highlight some of your biggest achievements to date, mention your profession, and include 1-2 of your top skills.
+\section{Summary} Skilled data science researcher and software engineer. 4+ years of experience applying statistical modeling techniques, including deep learning, to automate complex tasks. Proven excellence in technical communication, including key contributions to a grant proposal selected for a \$5.8 million award.
 
-\section{Work Experience}
+\section{Experience}
 	\job % STR
 		{July 2017 - Present}
 		{Systems and Technology Research}
 		{Woburn MA}
 		{http://www.stresearch.com/}
 		{Senior Researcher}
-		{\begin{itemize-noindent}
-			\item Machine learning research applied to defense and intelligence problems
-			\item Responsibilities include:
-				\begin{subitemize-noindent}
-					\item Independently conducting literature reviews, determining research directions
-					\item Designing, implementing, and tuning models
-					\item Writing scalable code to manage complex preprocessing routines, efficiently train models
-					\item Presenting results to academic audiences
-					\item Writing and reviewing grant proposals
-				\end{subitemize-noindent}
+		{Data science R\&D on challenging national defense problems. \\
+
+		\vspace{-7pt}
+		\textit{Responsibilities}
+		\begin{itemize-noindent}
+			\vspace{7pt}
+			\item Prototype, tune, productionize, and deploy a wide variety of statistical models to automate complex tasks
+			\item Design, implement, test, dockerize, and deploy efficient, massive-scale data processing algorithms
+			\item Technical communication, including presenting results to stakeholders and writing grant proposals
 		\end{itemize-noindent}
-		}
+
+		\textit{Key Achievements}
+		\begin{itemize-noindent}
+			\vspace{7pt}
+			\item Proposed Bayesian approach to automated software assurance. Proposal selected for \$5.8 million award
+			\item Designed and implemented fast probabilistic solution to NP-hard subgraph isomorphism problem
+			\item Designed and implemented matrix factorization model of individual behaviors in online groups
+		\end{itemize-noindent}}
+
 	\vspace{-15pt} % Spacing between STR and 1010data subsections
 	\job % 1010data
 		{July 2016 - July 2017}
@@ -51,18 +61,39 @@
 		{New York NY}
 		{https://www.1010data.com/}
 		{Data Scientist}
-		{\begin{itemize-noindent}
-			\vspace{-7pt}
-			\item Proprietary, distributed OLAP database for billion-record datasets
-			\item Selected activities:
-				\begin{subitemize-noindent}
-					\item Investigated models of a user's propensity to purchase a product after seeing ads for it
-					\item Optimized analyses for distributed processing
-					\item Developed software to automate database access management
-				\end{subitemize-noindent}
+		{Software development and data analysis over a distributed NoSQL database for billion-record datasets. \\
+
+		\vspace{-7pt}
+		\textit{Responsibilities}
+		\begin{itemize-noindent}
+			\vspace{7pt}
+			\item Optimize database queries for distributed execution
+			\item Write custom database access management software
+			\item Develop linear models of sales as a function of ad exposure
 		\end{itemize-noindent}}
 
-% 2 column layout for Education, Employment
+	\vspace{-15pt}
+	\job % Personal projects
+		{December 2016 - April 2017}
+		{Personal projects}
+		{}
+		{https://github.com/ttrine}
+		{\vspace{-7pt} \\
+		The Nature Conservancy Fisheries Monitoring}
+		{\vspace{-16pt}
+		\begin{itemize-noindent}
+			\vspace{7pt}
+			\item Implemented novel CNN to classify fish species. Regularized via batch normalization, data augmentation
+			\item Trained models on cloud GPUs, evaluated and analyzed results in R
+		\end{itemize-noindent}
+
+		\textit{AlphaGo replication \hfill January 2016 - May 2016}
+		\begin{itemize-noindent}
+			\vspace{7pt}
+			\item Analyzed AlphaGo paper and construct good-faith implementation with a group of graduate students
+			\item Implemented convolutional policy and value networks in Tensorflow
+		\end{itemize-noindent}
+		}
 \twocol{
 	\section{Education}
 			\job % University of Rochester
@@ -72,102 +103,28 @@
 				{https://www.rochester.edu/}
 				{B.S. Data Science}
 				{\begin{itemize-noindent}
-					\item First graduate of the program
-					\item Concentration in cognitive science
-					\item Linguistics minor
-					\item Xerox Scholarship recipient
-					\item Graduate level coursework:
+					\item Rigorous education in both computer science and statistical learning theory
+					% \item Member of program's first graduating class
+					\item Selected coursework
 						\begin{subitemize-noindent}
-							\item \textit{DSC 531 Data Science Practicum.} Open source AlphaGo implementation
-							\item \textit{CSC 461 Database Systems.} Data models, DDLs, ACID, normalization, NoSQL database systems
-						\end{subitemize-noindent}
-					\item Selected undergraduate courses:
-						\begin{subitemize-noindent}
-							\item \textit{Research.} BCS 206 Undergraduate Research in Cognitive Science
-							\item \textit{Computer Science.} CSC 172 Data Structures, CSC 282 Algorithms, CSC 262 Computational Introduction to Statistics, CSC 265 Intermediate Statistical Methods
-							\item \textit{Math.} MTH 201 Intro to Probability, MTH 203 Mathematical Statistics, MTH 235 Linear Algebra, MTH 150 Discrete Mathematics
+							\item \textit{Data Science Practicum.} Open source replication of AlphaGo, a Go AI built on CNNs
+							\item \textit{Database Systems.} SQL, data models, DDLs, ACID, normalization, NoSQL databases
+							\item \textit{Computer Science Courses.} Computer Programming, Data Structures, Algorithms
+							\item \textit{Math Courses.} Probability, Mathematical Statistics, Linear Algebra, Discrete Math
 						\end{subitemize-noindent}
 				\end{itemize-noindent}}
 }
 {
-	\section{Skills}
-		\textbf{Programming languages} Python, R, Java, C/C++, Bash \\
-		\textbf{ML} TensorFlow, Theano, Keras, Torch \\
-		\textbf{Software engineering} Git, test-driven development, object-oriented programming, functional programming \\
-		\textbf{Database systems} Relational (SQL), document (MongoDB), columnar, graph \\
-		\textbf{Soft skills} TODO
+	\section{Technical Skills}
+		\textbf{Machine learning} Supervised training, testing, and validation; unsupervised density estimation, probabilistic graphical models, recommender systems \\
+		\textbf{Deep learning} TensorFlow, Torch, GPU deployment, CNNs for image classiication, data augmentation, transformers for sentiment analysis
+
+		\rule{7.55cm}{0.2pt} \\
+
+		\vspace{-4pt}
+		\textbf{Software engineering} Git workflows, Docker, CI/CD, test-driven development, cloud deployment, object-oriented programming \\
+		\textbf{Data engineering} PostgreSQL, NoSQL databases, ETL pipelines, data warehousing, REST APIs \\
+		\textbf{Programming languages} Python, R, Java, Bash
 }
-
-\section{Selected Projects}
-
-	\experience{Group Dynamics Modeling, Forecasting, and Validation}{Systems and Technology Research}
-		{Dr. Kirill Trapeznikov}{September 2017 - Present}
-		{\begin{itemize-noindent}
-			\item{\textit{Research goal.} Investigate behavior of indivduals in group contexts on social media websites. Develop predictive models of group membership.}
-			\item{\textit{Role.} Primary technical contributor. Independently read papers, propose research directions, preprocess data, implement, train, and tune models, evaluate and present results.}
-			\item{\textit{Approach.} Inspired by recommender systems, formulate problem as matrix factorization. Learn latent factor matrices pointwise. To regularize, constrain model to learn distribution of associated unstructured data. Engineer pipeline to yield reproducible experiments despite nondeterminic preprocessing. Bayesian optimization efficiently tunes highly sensitive hyperparameters.}
-			\item{\textit{Results.} Ongoing. Models reliably outperform baselines. Regularization with unstructured data boosts performance overall, but unevenly across users. }
-		\end{itemize-noindent}}
-
-	\experience{Synchronized Plans and Analytics for aiR-Cyber-Space (SPARCS)}{Systems and Technology Research}
-		{Mr. Nick Pioch}{September 2017 - September 2018}
-		{\begin{itemize-noindent}
-			\item{\textit{Research goal.} Database alignment. Build model to automatically align schemas from disparate databases.}
-			\item{\textit{Role.} Lead analyst. Implemented, trained models both collaboratively and independently.}
-			\item{\textit{Approach.} Draw ideas from knowledge base completion literature. Train neural network to infer facts about entities at the ontological (schema) level.}
-			\item{\textit{Results.} Schemas of sufficient size required to obtain reasonable results. Model correctly infers unobserved ontological facts when trained against large schemas with some explicit overlap.}
-		\end{itemize-noindent}}
-
-	\experience{AlphaGo Replication}{DSC 531 Data Science Practicuum}
-		{Dr. Henry Kautz}{January 2016 - May 2016}
-		{\begin{itemize-noindent}
-			\item{\textit{Research goal.} Build open-source implementation of AlphaGo.}
-			\item{\textit{Role.} Sole undergraduate student. Independently built initial prototype of the four deep nets in AlphaGo system. Implemented Markov Chain Monte Carlo (MCMC) rollouts with a partner. Helped lead group discussions to resolve apparent implementation inconsistencies.}
-			\item{\textit{Approach.} Study paper closely, understand implementation in sufficient detail to reconstruct it.}
-			\item{\textit{Results.} Many individual components finished (models, rollouts, game simulator, etc). Overall implementation incomplete due to insufficient time and compute resources. Broadly useful effort nevertheless; Github repository forked several thousand times, still under active development.}
-		\end{itemize-noindent}}
-
-	\experience{Online Interpretations of Scalar Adjectives}{BCS 206 Undergraduate Research in Cognitive Science}
-		{Dr. Chigusa Kurumada}{September 2015 - May 2016}
-		{\begin{itemize-noindent}
-			\item{\textit{Research question.} In discourse, people integrate context with speaker utterances to resolve their meaning. Two opposing theories about the mechanism behind this process: One holds that people rely on fixed rules to accomplish contextual integration, the other that the mechanism flexibly adapts to specific situations.}
-			\item{\textit{Role.} Team member, programmer. Independently analyzed experimental data, from raw eyetracking time series to hypothesis testing. Presented results with team.}
-			\item{\textit{Approach.} Conceptual replication of The Effect of Speaker-Specific Information on Pragmatic Inferences (Grodner and Sedivy, 2011). Eyetracking study with 40 subjects. Control group hears instructions from normal speaker, experimental group from speaker who overcontextualizes. Hypothesis: Control group integrates context, while experimental group learns to disregard it.}
-			\item{\textit{Results.} Hypothesis confirmed, supporting theory of adaptable contextual integration. Possible flaw discovered in reference experiment; they did not report interaction significance for a within-subject factor.}
-		\end{itemize-noindent}}
-
-\section{Grant Proposals}
-	\experience{Bayesian ML for Assurance Case Evaluation in Complex Systems}{Systems and Technology Research}
-		{Dr. Steven Jilcott}{July 2018 - Present}
-		{\begin{itemize-noindent}
-			\item{\textit{Description.} Bayesian machine learning framework to automate safety assurance processes for complex, modular systems.}
-			\item{\textit{Role.} Contributed many of the main ideas of the proposal.}
-			\item{\textit{Outcome.} Won 5.8 million dollar contract.}
-	\end{itemize-noindent}}
-
-\section{Poster Presentations}
-	\subsection*{}
-	{\begin{itemize-noindent}
-		\item{A. Sullivan. B. Gardner, and T. Trine, ``Speaker-Specific Modulations of Real-Time Visual Search Behaviors to Pragmatic Unreliability,'' presented at Undergraduate Research Exposition, Rochester, NY April 2016}
-	\end{itemize-noindent}
-
-\section{Teaching and Advising Experience}
-	\experience{DSC 531 Lesson Planner}{University of Rochester}
-		{Dr. Henry Kautz}{June 2016 - July 2016}
-		{\begin{itemize-noindent}
-			\item{Designed module for graduate-level course. Deep learning overview, covering basics of vanilla and convolutional nets, training on remote GPU cluster, and applications to natural language processing.}
-		\end{itemize-noindent}}
-
-	\experience{EcoReps coordinator}{University of Rochester}
-		{Dr. Leila Nadir}{September 2013 - May 2014}
-		{\begin{itemize-noindent}
-			\item{Credit bearing, two-course series on sustainable leadership. Responsible for course design / lesson planning, assignment grading, field trip coordination for class of 30 students.}
-		\end{itemize-noindent}}
-
-	\experience{CSC 108 TA}{University of Rochester}
-		{Dr. Rolando Raqueno}{September 2013 - December 2013}
-		{\begin{itemize-noindent}
-			\item{Introductory course on computer programming and applications. Ran, graded labs.}
-		\end{itemize-noindent}}
 
 \end{document}

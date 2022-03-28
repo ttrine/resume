@@ -31,7 +31,6 @@
 \sectionfont{\color{slateblue}} % Set section title color
 
 % Custom page style
-\fancypagestyle{plain}{\fancyhf{}\cfoot{\thepage\ of \pageref{LastPage}}}
 \pagestyle{plain} % Use style throughout document
 \renewcommand{\headrulewidth}{0pt} % Disable default header rule
 \renewcommand{\footrulewidth}{0pt} % Disable default footer rule
@@ -95,6 +94,7 @@
 \newcommand{\job}[6]{
 	\subsection{\href{#4}{#2}} \hfill #3 \\
 	\textit{#5 \hfill #1} \\
+	\vspace{-7pt} \\
 	#6
 }
 
